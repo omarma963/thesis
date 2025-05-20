@@ -1,5 +1,5 @@
-# Detect male users pretending to be female on Facebook by analyzing writing style (Arabic + English), 
-# using deep learning (BERT/AraBERT), and image verification.
+# Detect male users pretending to be female on Facebook by analyzing writing style (Arabic + English),using deep learning (BERT/AraBERT), and image verification.
+
 
 Overview
 
