@@ -1,0 +1,51 @@
+FAQs for Defense Preparation
+
+Why did you choose BERT and AraBERT?
+
+These models capture deep contextual information and are proven effective for gender and author profiling.
+----------------------------------------------------------------------
+What are the limitations of your approach?
+
+Dialect variation, image search reliability, and dataset bias.
+----------------------------------------------------------------------
+How does reverse image search contribute to detection?
+
+It flags reused stock images or public celebrity photos often used in fake profiles.
+----------------------------------------------------------------------
+What’s the novelty of your work?
+
+A bilingual, multimodal approach combining text and image verification for impersonator detection.
+----------------------------------------------------------------------
+Can this be generalized to other platforms?
+
+Yes, with dataset adaptation and minor model fine-tuning.
+----------------------------------------------------------------------
+What ethical considerations were taken?
+
+Only public data used, all content anonymized, and compliance with fair use and privacy laws ensured.
+----------------------------------------------------------------------
+✅ Why Preprocess Separately?
+Different models and tokenizers:
+
+Arabic → needs AraBERT tokenizer
+
+English → needs BERT tokenizer
+
+Different cleaning rules:
+
+Arabic: remove diacritics, normalize Arabic letters
+
+English: remove contractions, lowercase, etc.
+
+Different token patterns and writing styles:
+
+Helps avoid language bias during training
+----------------------------------------------------------------------
+why choose arabert over LSTM ?
+fine-tuned AraBERT substantially outperforms LSTM for gender identification: AraBERT achieved 84.6–92.4% accuracy, whereas LSTM was ~78.5%
+----------------------------------------------------------------------
+why did not use RNN with LSTM ?
+Traditional sequential models like RNNs and LSTMs can capture writing-style patterns by processing word sequences, but they have limitations for Arabic. 
+----------------------------------------------------------------------
+why did not use GLOVE ?
+Word embeddings such as GloVe (static vectors) may not capture rich Arabic morphology or context-specific usage.
