@@ -52,4 +52,8 @@ Includes full methodology, experiments, and visual workflow.
 pip install -r requirements.txt
 
 ## Models and Datasets
-English Bert Model ----> 
+- [Fine tuned Bert](https://drive.google.com/drive/folders/1jlcPgFPCpklxQ3qih8zJb9o5ovfmVk3V?usp=sharing)
+- [Fine tuned Marbert](https://drive.google.com/drive/folders/1PlEW9dFm9vOYqYytzhV-01yki4TUP77Q?usp=sharing)
+- [Arabic Pan 2017](https://drive.google.com/drive/folders/1GXdJbYds2ZIcX3_Z_E0K3UzYLeo9EfSb?usp=sharing)
+- [English Pan 2017](https://drive.google.com/drive/folders/1Fotv0fGZKEotmikDYyaL0jrFARlvuyiR?usp=sharing)
+- [Blog authorship](https://drive.google.com/file/d/1J0dvrptQoY96jp20pWyFJAjMuqF4Fekm/view?usp=sharing)
