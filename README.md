@@ -50,3 +50,6 @@ Includes full methodology, experiments, and visual workflow.
 ## 📦 Setup
 ```bash
 pip install -r requirements.txt
+
+## Models and Datasets
+English Bert Model ----> 
