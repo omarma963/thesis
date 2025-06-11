@@ -1,0 +1,46 @@
+gender-impersonation-thesis/
+│
+├── README.md
+├── LICENSE
+├── .gitignore
+│
+├── 📁 data/
+│   ├── README.md              # Instructions on where/how to obtain raw datasets (PAN, Blog, etc.)
+│   ├── english_dataset.csv
+│   ├── blog_dataset.csv
+│   ├── arabic_dataset.csv
+│   └── samples/               # 5-sample entries for PAN, Blog, Arabic (used in thesis)
+│
+├── 📁 models/
+│   ├── marbert_arabic/        # Trained MARBERT model
+│   ├── bertweet_english/      # Trained BERTweet model
+│   └── decision_layer.pkl     # Trained meta-classifier (if used)
+│
+├── 📁 notebooks/
+│   ├── 1_preprocessing.ipynb  # Data cleaning, balancing, inspection
+│   ├── 2_training_arabic.ipynb
+│   ├── 3_training_english.ipynb
+│   └── 4_decision_layer.ipynb
+│
+├── 📁 src/
+│   ├── data_loader.py         # DataProcessor class (loading/cleaning)
+│   ├── tokenizer_ar.py        # Arabic tokenization (MARBERT)
+│   ├── tokenizer_en.py        # English tokenization (BERTweet)
+│   ├── train_model.py         # Training loop for both models
+│   ├── decision_layer.py      # Final decision code (weights or meta)
+│   └── utils.py               # Common helpers
+│
+├── 📁 instagram_check/
+│   └── instagram_detector.py  # Instagram detection logic with scraping and fallback
+│
+├── 📁 image_analysis/
+│   └── serpapi_reverse_image.py  # Reverse image + EXIF scoring using SerpAPI
+│
+├── 📁 results/
+│   ├── arabic_training_log.txt
+│   ├── english_training_log.txt
+│   └── final_evaluation_metrics.json
+│
+└── thesis/
+    ├── Thesis_Final.pdf
+    └── Thesis_Final.docx
