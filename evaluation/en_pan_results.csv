@@ -1,0 +1,53 @@
+emoji is not installed, thus not converting emoticons or emojis into text. Install emoji: pip3 install emoji==0.6.0
+✅ Model loaded on cuda
+
+⏳ Loading data...
+✅ Loaded 3601 valid English texts
+Predicting genders: 100%|██████████| 113/113 [00:02<00:00, 45.28it/s]
+
+💾 Results saved to english_labeled_enhanced.csv
+
+📊 Class Distribution:
+predicted_gender
+female    1801
+male      1800
+Name: count, dtype: int64
+
+🔍 Confidence Analysis (for confident predictions):
+count    3601.000000
+mean        0.527606
+std         0.006126
+min         0.504521
+25%         0.521499
+50%         0.521499
+75%         0.533727
+90%         0.533727
+95%         0.533727
+max         0.533727
+Name: confidence, dtype: float64
+📈 Saved confidence distribution plot to confidence_distribution.png
+
+🔎 Sample Predictions:
+                                                     text predicted_gender  \
+text                                                label           female   
+patriots getting fisted hahaha way town pal giv...      0           female   
+thanks warning find hard slip wet carpet also c...      0           female   
+cares calum lets talk cats ever seen generic be...      1             male   
+feel like russian mobsters movies much attracti...      1             male   
+tell truth come wi us happy birthday mate glad ...      0           female   
+im artist month leichhardt lifes complicated le...      1             male   
+four days twitter facebook news loved im thinki...      0           female   
+like wow cant wait try new series waitng gibson...      0           female   
+another day another boycott truly one unhappy g...      1             male   
+
+                                                    confidence  
+text                                                  0.504521  
+patriots getting fisted hahaha way town pal giv...    0.533727  
+thanks warning find hard slip wet carpet also c...    0.533727  
+cares calum lets talk cats ever seen generic be...    0.521499  
+feel like russian mobsters movies much attracti...    0.521499  
+tell truth come wi us happy birthday mate glad ...    0.533727  
+im artist month leichhardt lifes complicated le...    0.521499  
+four days twitter facebook news loved im thinki...    0.533727  
+like wow cant wait try new series waitng gibson...    0.533727  
+another day another boycott truly one unhappy g...    0.521499  
