@@ -50,7 +50,7 @@ Includes full methodology, experiments, and visual workflow.
 ## 📦 Setup
 ```bash
 pip install -r requirements.txt
-
+```
 ## Models and Datasets
 - [Fine tuned Bert](https://drive.google.com/drive/folders/1jlcPgFPCpklxQ3qih8zJb9o5ovfmVk3V?usp=sharing)
 - [Fine tuned Marbert](https://drive.google.com/drive/folders/1PlEW9dFm9vOYqYytzhV-01yki4TUP77Q?usp=sharing)
