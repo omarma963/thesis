@@ -1,0 +1,31 @@
+# deployment/api.py
+from fastapi import FastAPI
+from transformers import pipeline
+import torch
+
+app = FastAPI()
+
+# Load your trained MARBERT model
+classifier = pipeline(
+    "text-classification",
+    model="./best_marbert_gender",
+    tokenizer="./best_marbert_gender",
+    device=0 if torch.cuda.is_available() else -1
+)
+
+@app.post("/predict")
+async def predict_gender(text: str):
+    result = classifier(text)
+    return {
+        "text": text,
+        "predicted_gender": "female" if result[0]["label"] == "LABEL_1" else "male",
+        "confidence": result[0]["score"]
+    }
+
+# Run with: uvicorn api:app --reload
+
+------------------------------------------
+Usage:
+
+bash
+curl -X POST "http://localhost:8000/predict" -H "Content-Type: application/json" -d '{"text":"هذه الجملة بالعربية"}'
